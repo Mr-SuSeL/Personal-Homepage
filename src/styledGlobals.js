@@ -6,7 +6,7 @@ export const StyledGlobals = createGlobalStyle`
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.pageText};
     transition: all 0.3s ease;
   }
 `;
@@ -24,8 +24,8 @@ export const ToggleButton = styled.button`
   position: fixed;
   top: 20px;
   right: 20px;
-  background: ${props => props.theme.colors.primary};
-  color: white;
+  background: ${props => props.theme.colors.buttonBg};
+  color: ${props => props.theme.colors.buttonText};
   border: none;
   padding: 10px 15px;
   border-radius: 25px;
@@ -39,7 +39,7 @@ export const ToggleButton = styled.button`
 `;
 
 export const Title = styled.h1`
-  color: ${props => props.theme.colors.text};
+  color: ${props => props.theme.colors.pageText};
   font-size: 3rem;
   margin-bottom: 20px;
 `;

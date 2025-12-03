@@ -4,16 +4,18 @@ import { StyledGlobals, GlobalContainer, ToggleButton, Title, ThemeProvider } fr
 const lightTheme = {
   colors: {
     background: '#f0f0f0',
-    text: '#333',
-    primary: '#007bff'
+    pageText: '#333333',
+    buttonText: '#ffffff',
+    buttonBg: '#424447'
   }
 };
 
 const darkTheme = {
   colors: {
-    background: '#1a1a1a',
-    text: '#ffffff',
-    primary: '#61dafb'
+    background: '#1a1a1a', 
+    pageText: '#ffffff',
+    buttonText: '#333333',
+    buttonBg: '#d6d6d6'
   }
 };
 
@@ -23,7 +25,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>  
-      <StyledGlobals />            
+      <StyledGlobals />          
       
       <ToggleButton onClick={() => setIsDark(!isDark)}>
         {isDark ? '☀️ Jasny' : '🌙 Ciemny'}
