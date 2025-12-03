@@ -5,8 +5,9 @@ export const StyledGlobals = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
+    transition: all 0.3s ease;
   }
 `;
 
@@ -16,11 +17,33 @@ export const GlobalContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: ${props => props.theme.colors.background};
 `;
 
-// ✅ Eksport ThemeProvider
+export const ToggleButton = styled.button`
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: ${props => props.theme.colors.primary};
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+export const Title = styled.h1`
+  color: ${props => props.theme.colors.text};
+  font-size: 3rem;
+  margin-bottom: 20px;
+`;
+
 export { ThemeProvider };
 
-// ✅ Default export (opcjonalny)
 export default StyledGlobals;
