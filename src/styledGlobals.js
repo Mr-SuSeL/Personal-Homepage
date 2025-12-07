@@ -4,7 +4,7 @@ export const StyledGlobals = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.pageText};
     transition: all 0.3s ease;
