@@ -11,7 +11,7 @@ Error generating stack: `+e.message+`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: ${i=>i.theme.colors.background};
     color: ${i=>i.theme.colors.pageText};
     transition: all 0.3s ease;
