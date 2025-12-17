@@ -42,3 +42,15 @@ export const EmailLink = styled.a`
         font-size: 18px;
     }
 `;
+
+export const Paragraph = styled.p`
+    max-width: 670px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: ${({ theme }) => theme.colors.textPrimary};
+    margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 16px;
+    }
+`;
