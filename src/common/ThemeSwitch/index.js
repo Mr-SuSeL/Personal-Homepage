@@ -1,20 +1,23 @@
-import { useDispatch } from "react-redux";
-import { selectIsDarkTheme, toggleTheme } from "../themeSlice";
-import { Box, Button, Icon, IconWrapper, Text, Wrapper } from "./styled";
+import { useDispatch, useSelector } from "react-redux";
+import { selectIsDarkMode, toggleTheme } from "../themeSlice";
+import { Wrapper, Button, Text, IconWrapper, Sun, Moon } from "./styled";
 
 export const ThemeSwitch = () => {
-    const isDarkTheme = useSelector(selectIsDarkTheme);
-    const dispatch = useDispatch();
-    return (
-        <Wrapper>
-            <Button onClick={() => dispatch(toggleTheme())} aria-label="change the theme">
-                <Text>Dark mode {isDarkTheme ? "on" : "off"}</Text>
-                <Box>
-                    <IconWrapper moveToRight={isDarkTheme}>
-                        <Icon />
-                    </IconWrapper>
-                </Box>
-            </Button>
-        </Wrapper>
-    );
-}
+  const isDarkMode = useSelector(selectIsDarkMode);
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(toggleTheme());
+  };
+
+  return (
+    <Wrapper>
+      <Button onClick={handleClick} aria-label="change theme">
+        <Text>{isDarkMode ? "☀️ Jasny" : "🌙 Ciemny"}</Text>
+        <IconWrapper moveToRight={isDarkMode}>
+          {isDarkMode ? <Sun /> : <Moon />}
+        </IconWrapper>
+      </Button>
+    </Wrapper>
+  );
+};
