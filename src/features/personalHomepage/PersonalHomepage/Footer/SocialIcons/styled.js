@@ -13,7 +13,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-// wszystkie el. oprócz ostatniego
+
   &:not(:last-child) {
     margin-right: 24px;
 
@@ -34,6 +34,14 @@ export const Link = styled.a`
 
 export const styleIcon = (Icon) => styled(Icon)`
   height: auto;
+  width: 48px;
+  display: block;
+
+
+  & path {
+    fill: currentColor;
+    transition: fill 0.3s;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     width: 32px;
