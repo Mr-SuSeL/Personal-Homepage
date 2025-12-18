@@ -141,10 +141,12 @@ Error generating stack: `+l.message+`
 `,cb=tt(lb)`
   color: ${({theme:a})=>a.colors.primary};
   margin-right: 16px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
+  transition: color 0.3s; /* Płynna zmiana koloru przy przełączaniu motywu */
 
-  & path {
-    fill: currentColor;
+  /* Celujemy we wszystkie elementy wewnątrz SVG (path, circle, rect itp.) */
+  & * {
+    fill: currentColor !important;
   }
 
   @media (max-width: ${({theme:a})=>a.breakpoints.mobileMax}px) {
