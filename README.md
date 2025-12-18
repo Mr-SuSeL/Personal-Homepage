@@ -1,5 +1,7 @@
 # Personal Portfolio – React + Vite
 
+Demo: [https://mr-susel.github.io/Personal-Homepage/](https://mr-susel.github.io/Personal-Homepage/)
+
 A modern, responsive personal portfolio built with **React**, **Vite**, **Redux Toolkit**, and **styled-components**.  
 Showcases your skills, projects, and contact information with a clean UI and light/dark theme switch.
 
