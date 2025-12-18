@@ -13,9 +13,9 @@ export const ThemeSwitch = () => {
   return (
     <Wrapper>
       <Button onClick={handleClick} aria-label="change theme">
-        <Text>{isDarkMode ? "☀️ Jasny" : "🌙 Ciemny"}</Text>
-        <IconWrapper moveToRight={isDarkMode}>
-          {isDarkMode ? <Sun /> : <Moon />}
+        <Text>{isDarkMode ? "Jasny" : "Ciemny"}</Text>
+        <IconWrapper $moveToRight={isDarkMode}>
+          {isDarkMode ? <Sun>☀️</Sun> : <Moon>🌙</Moon>}
         </IconWrapper>
       </Button>
     </Wrapper>

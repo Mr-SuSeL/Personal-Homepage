@@ -1,11 +1,12 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
+import { themeLight, themeDark } from "../core/App/theme";
 
 const themeSlice = createSlice({
   name: "theme",
   initialState: {
     isDarkMode: false,
-    light: lightTheme, 
-    dark: darkTheme, 
+    light: themeLight,
+    dark: themeDark,
   },
   reducers: {
     toggleTheme: (state) => {
@@ -14,19 +15,15 @@ const themeSlice = createSlice({
   },
 });
 
-export const { 
-    toggleTheme,
- } = themeSlice.actions;
+export const { toggleTheme } = themeSlice.actions;
 
-const selectThemeState = state => state.theme;
+const selectThemeState = (state) => state.theme;
 
-export const selectIsDarkMode = state => selectThemeState(state).isDarkMode;
+export const selectIsDarkMode = (state) => selectThemeState(state).isDarkMode;
 
-// Zwraca pełny obiekt motywu dla ThemeProvider
 export const selectCurrentTheme = (state) => {
   const { isDarkMode, dark, light } = selectThemeState(state);
   return isDarkMode ? dark : light;
 };
 
-export default themeSlice.reducer;  
-
+export default themeSlice.reducer;

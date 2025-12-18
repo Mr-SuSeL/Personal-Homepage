@@ -1,28 +1,27 @@
-import { styleIcon } from "./styled";
-import { ReactComponent as GitHubIcon } from "./icons/github.svg";
-import { ReactComponent as LinkedInIcon } from "./icons/linkedin.svg";
-import { ReactComponent as FacebookIcon } from "./icons/facebook.svg";
-import { ReactComponent as InstagramIcon } from "./icons/Instagram.svg";
+import githubUrl from "./icons/github.svg";
+import linkedinUrl from "./icons/linkedin.svg";
+import facebookUrl from "./icons/facebook.svg";
+import instagramUrl from "./icons/instagram.svg";
 
 export const socials = [
   {
     name: "GitHub",
     url: "https://github.com/Mr-SuSeL/",
-    Icon: styleIcon(GitHubIcon)
+    icon: githubUrl,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/%C5%82ukasz-sus%C5%82owicz-9b7093b3/",
-    Icon: styleIcon(LinkedInIcon)   
+    icon: linkedinUrl,
   },
   {
     name: "Facebook",
-    url: "https://www.facebook.com/suslowiczenduro", //do usunięcia
-    Icon: styleIcon(FacebookIcon)   
+    url: "https://www.facebook.com/suslowiczenduro",
+    icon: facebookUrl,
   },
   {
     name: "Instagram",
     url: "https://instagram.com",
-    Icon: styleIcon(InstagramIcon)
-  }
+    icon: instagramUrl,
+  },
 ];

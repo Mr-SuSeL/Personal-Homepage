@@ -1,6 +1,4 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as SunIcon } from "../../assets/sun.svg";
-import { ReactComponent as MoonIcon } from "../../assets/moon.svg";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -18,7 +16,7 @@ export const Button = styled.button`
   border-radius: 25px;
   font-size: 14px;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.05);
   }
@@ -34,19 +32,20 @@ export const IconWrapper = styled.span`
   justify-content: center;
   transition: transform 0.3s ease;
 
-  ${({ moveToRight }) =>
-    moveToRight &&
+  ${({ $moveToRight }) =>
+    $moveToRight &&
     css`
       transform: translateX(4px);
     `}
 `;
 
-export const Sun = styled(SunIcon)`
-  width: 18px;
-  height: 18px;
+// zamiast SunIcon/MoonIcon – zwykły tekst/emoji
+export const Sun = styled.span`
+  font-size: 18px;
+  line-height: 1;
 `;
 
-export const Moon = styled(MoonIcon)`
-  width: 18px;
-  height: 18px;
+export const Moon = styled.span`
+  font-size: 18px;
+  line-height: 1;
 `;

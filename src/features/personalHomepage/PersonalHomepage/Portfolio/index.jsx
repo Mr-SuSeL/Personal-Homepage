@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Content } from "./Content/skeleton_example";
+import { Content } from "./Content";
 import { StyledGithubIcon, Header, Section, MyRecentProjects } from "./styled";
 import { SubHeader } from "../SubHeader";
 import { githubUsername } from "./githubUsername";
@@ -24,10 +24,11 @@ export const Portfolio = () => {
                 <MyRecentProjects>My recent projects</MyRecentProjects>
             </Header>
 
-            <Content 
-                repositories={repositories} 
-                repositoriesStatus={repositoriesStatus}
+            <Content
+                status={repositoriesStatus}
+                repositories={repositories}
             />
+
         </Section>
     );
 };
