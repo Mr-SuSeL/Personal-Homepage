@@ -1,9 +1,10 @@
+import React from "react";
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
+import { Normalize } from "styled-normalize";
 import { PersonalHomepage } from "../../features/personalHomepage/PersonalHomepage";
 import { GlobalStyle } from "./GlobalStyle";
 import { themeDark, themeLight } from "./theme";
-import { Normalize } from "styled-normalize";
 import { selectIsDarkMode } from "../../common/themeSlice";
 
 export const App = () => {
@@ -16,6 +17,6 @@ export const App = () => {
       <PersonalHomepage />
     </ThemeProvider>
   );
-}
+};
 
 export default App;
