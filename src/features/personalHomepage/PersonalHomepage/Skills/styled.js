@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SubHeader } from "../SubHeader";
-import bulletUrl from "./bullet.svg";
+import BulletIcon from "./bullet.svg?react"; 
 
 export const Section = styled.section`
   background: ${({ theme }) => theme.colors.boxBackground};
@@ -8,6 +8,7 @@ export const Section = styled.section`
   margin-top: 72px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
+  transition: background 0.3s; 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     padding: 16px;
@@ -27,10 +28,6 @@ export const List = styled.ul`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
-    font-size: 16px;
-  }
-
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     grid-template-columns: 1fr;
     font-size: 14px;
@@ -40,20 +37,24 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   display: flex;
+  align-items: center; 
   line-height: 1.4;
+  color: ${({ theme }) => theme.colors.textSecondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     line-height: 1.2;
   }
 `;
 
-export const Bullet = styled.img.attrs({
-  src: bulletUrl,
-  alt: "",
-})`
+
+export const StyledBullet = styled(BulletIcon)`
   color: ${({ theme }) => theme.colors.primary};
   margin-right: 16px;
-  height: auto;
+  flex-shrink: 0; 
+
+  & path {
+    fill: currentColor;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     width: 6px;
@@ -63,6 +64,7 @@ export const Bullet = styled.img.attrs({
 
 export const StyleHeader = styled(SubHeader)`
   margin-bottom: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.headerLine};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
