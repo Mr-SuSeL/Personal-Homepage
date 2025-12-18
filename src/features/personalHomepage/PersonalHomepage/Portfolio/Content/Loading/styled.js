@@ -1,6 +1,5 @@
-// Loading/styled.js
 import styled, { keyframes } from "styled-components";
-import spinnerUrl from "./spinner.svg";
+import SpinnerIcon from "./spinner.svg?react"; 
 
 const rotate = keyframes`
   to {
@@ -22,13 +21,11 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const StyledSpinner = styled.img.attrs({
-  src: spinnerUrl,
-  alt: "Loading",
-})`
+export const StyledSpinner = styled(SpinnerIcon)`
   margin-top: 48px;
   animation: ${rotate} 1s linear infinite;
   color: ${({ theme }) => theme.colors.primary};
+  width: 91px;
   height: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
