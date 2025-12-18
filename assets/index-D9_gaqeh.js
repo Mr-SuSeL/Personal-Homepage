@@ -142,9 +142,9 @@ Error generating stack: `+l.message+`
   color: ${({theme:a})=>a.colors.primary};
   margin-right: 16px;
   flex-shrink: 0;
-  transition: color 0.3s; /* Płynna zmiana koloru przy przełączaniu motywu */
+  transition: color 0.3s; 
 
-  /* Celujemy we wszystkie elementy wewnątrz SVG (path, circle, rect itp.) */
+
   & * {
     fill: currentColor !important;
   }
@@ -178,7 +178,7 @@ Error generating stack: `+l.message+`
   @media (max-width: ${({theme:a})=>a.breakpoints.mobileMax}px) {
     height: 20px;    /* trochę mniejsze na mobile */
   }
-`,db=["Semantic HTML","CSS (Flexbox, Grid, BEM)","Responsive Web Design","Figma & UX/UI Design","TailwindCSS","Shadcn/ui & DaisyUI","JavaScript (ES6+)","Immutability & Error handling","React (Hooks, Context, Router)","Redux (Toolkit, Saga)","TypeScript","Working with API (fetch, axios)","Promises, Async/await","NPM & Git","GitHub Pull Requests & Review","WordPress & WooCommerce","Node.js","MongoDB & Mongoose","PostgreSQL & MySQL","Python","Django & Django Rest Framework","FastAPI","Data Science (R, Pandas)","Algorithmic Trading Strategies","Docker","DevOps Best Practices","Scrum & Trello","Teamwork & Debugging","Linux","Machine Learning (Scikit-learn, Keras)"],hb=["Machine Learning with Transformers in AlgoTrading","Express.js & Nest.js","Microservices Architecture","Advanced Testing Skills (Unit/Integration/E2E)","Full Production Ready CI/CD Pipelines","Kubernetes","Terraform","GCP Cloud Engineer","AWS Certified Solutions Architect"],ly="Mr-SuSeL",mb="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='41'%20height='37'%20viewBox='0%200%2025%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12.5%2010V14M12.5%2017V15.5M14.2483%205.64697L20.8493%2017.5287C21.5899%2018.8618%2020.6259%2020.5%2019.101%2020.5H5.89903C4.37406%2020.5%203.41013%2018.8618%204.15072%2017.5287L10.7517%205.64697C11.5137%204.27535%2013.4863%204.27535%2014.2483%205.64697Z'%20stroke='%23121923'%20stroke-width='1.2'%20fill='currentColor'%20/%3e%3c/svg%3e",pb=tt.article`
+`,db=["Semantic HTML","CSS (Flexbox, Grid, BEM)","Responsive Web Design","Figma & UX/UI Design","TailwindCSS","Shadcn/ui & DaisyUI","JavaScript (ES6+)","Immutability & Error handling","React (Hooks, Context, Router)","Redux (Toolkit, Saga)","TypeScript","NextJS","Working with API (fetch, axios)","Promises, Async/await","NPM & Git","GitHub Pull Requests & Review","WordPress & WooCommerce","Node.js","MongoDB & Mongoose","PostgreSQL & MySQL","Python","Django & Django Rest Framework","FastAPI","Data Science (R, Pandas)","Algorithmic Trading Strategies","Docker","DevOps Best Practices","Scrum & Trello","Teamwork & Debugging","Linux","Machine Learning (Scikit-learn, Keras)"],hb=["Machine Learning with Transformers in AlgoTrading","Express.js & Nest.js","Storybook","Flask","Microservices Architecture","Advanced Testing Skills (Unit/Integration/E2E)","Full Production Ready CI/CD Pipelines","Kubernetes","Terraform","GCP Cloud Engineer","AWS Certified Solutions Architect"],ly="Mr-SuSeL",mb="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='41'%20height='37'%20viewBox='0%200%2025%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12.5%2010V14M12.5%2017V15.5M14.2483%205.64697L20.8493%2017.5287C21.5899%2018.8618%2020.6259%2020.5%2019.101%2020.5H5.89903C4.37406%2020.5%203.41013%2018.8618%204.15072%2017.5287L10.7517%205.64697C11.5137%204.27535%2013.4863%204.27535%2014.2483%205.64697Z'%20stroke='%23121923'%20stroke-width='1.2'%20fill='currentColor'%20/%3e%3c/svg%3e",pb=tt.article`
   margin-top: 96px;
   display: grid;
   justify-items: center;
