@@ -21,7 +21,7 @@ export const socials = [
   },
   {
     name: "Instagram",
-    url: "https://instagram.com",
+    url: "https://www.instagram.com/mr_susel/",
     icon: InstagramIcon,
   },
 ];
