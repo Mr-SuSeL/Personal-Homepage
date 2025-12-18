@@ -10,6 +10,7 @@ export const skills = [
     "React (Hooks, Context, Router)",
     "Redux (Toolkit, Saga)",
     "TypeScript",
+    "NextJS",
     "Working with API (fetch, axios)",
     "Promises, Async/await",
     "NPM & Git",
@@ -34,6 +35,8 @@ export const skills = [
 export const nextSkills = [
     "Machine Learning with Transformers in AlgoTrading",
     "Express.js & Nest.js",
+    "Storybook",
+    "Flask",
     "Microservices Architecture",
     "Advanced Testing Skills (Unit/Integration/E2E)",
     "Full Production Ready CI/CD Pipelines",
